@@ -19,14 +19,14 @@ const navbarItems: NavbarItem[] = [
     href: "/pricing",
     name: "Pricing",
   },
-  {
-    href: "/support",
-    name: "Support",
-  },
-  {
-    href: "/blog",
-    name: "Blog",
-  },
+  // {
+  //   href: "/support",
+  //   name: "Support",
+  // },
+  // {
+  //   href: "/blog",
+  //   name: "Blog",
+  // },
 ];
 
 const Navbar = async () => {
