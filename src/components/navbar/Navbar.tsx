@@ -5,6 +5,7 @@ import NavbarWeb from "./NavbarWeb";
 import NavbarMobile from "./NavbarMobile";
 import { cn } from "@/lib/utils";
 import { NavbarItem } from ".";
+import { UserButton } from "@clerk/nextjs";
 
 const navbarItems: NavbarItem[] = [
   {
@@ -54,6 +55,7 @@ const Navbar = async () => {
           >
             Sign In
           </Link>
+          <UserButton />
         </nav>
       </div>
     </header>
