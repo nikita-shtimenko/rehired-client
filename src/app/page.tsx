@@ -9,6 +9,7 @@ import { siteConfig } from "@/config";
 import Testimonials from "@/components/Testimonials";
 import Features from "@/components/Features";
 import Stats from "@/components/Stats";
+import OurTeam from "@/components/OurTeam";
 
 const HomePage = () => {
   return (
@@ -63,7 +64,7 @@ const HomePage = () => {
                 <Announcement
                   href="#"
                   icon="🎉"
-                  text="New pricing, companies profile and more."
+                  text="New pricing, company profiles and more."
                   color="green"
                   className="mb-4"
                 />
@@ -164,6 +165,7 @@ const HomePage = () => {
       <Stats className="mt-20 lg:mt-24" />
       <Features className="mt-32 lg:mt-56" />
       <Testimonials className="mt-20 lg:mt-24" />
+      {/* <OurTeam /> */}
     </main>
   );
 };

@@ -32,14 +32,8 @@ const Announcement = ({
         className="mx-2 h-4 bg-primary/10"
         orientation="vertical"
       />{" "}
-      <Text className={`sm:hidden text-${color}-600`}>
-        <Balancer>{text}</Balancer>
-      </Text>
-      <Text className={`hidden sm:inline text-${color}-600`}>
-        <Balancer>{text}</Balancer>
-      </Text>
-      {/* <span className="sm:hidden">{text}</span>
-      <span className="hidden sm:inline">{text}</span> */}
+      <span className="sm:hidden">{text}</span>
+      <span className="hidden sm:inline">{text}</span>
       <IconArrowNarrowRight />
     </BadgeButton>
   );

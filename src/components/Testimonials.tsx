@@ -69,33 +69,33 @@ const testimonials: Testimonial[] = [
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
-  {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-    author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-    author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-    author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
+  // {
+  //   body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+  //   author: {
+  //     name: "Leslie Alexander",
+  //     handle: "lesliealexander",
+  //     imageUrl:
+  //       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  //   },
+  // },
+  // {
+  //   body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+  //   author: {
+  //     name: "Leslie Alexander",
+  //     handle: "lesliealexander",
+  //     imageUrl:
+  //       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  //   },
+  // },
+  // {
+  //   body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+  //   author: {
+  //     name: "Leslie Alexander",
+  //     handle: "lesliealexander",
+  //     imageUrl:
+  //       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  //   },
+  // },
 ];
 
 interface ITestimonialsProps {
@@ -122,8 +122,9 @@ const Testimonials = ({ className }: ITestimonialsProps) => {
                 className="pt-8 sm:inline-block sm:w-full sm:px-4"
               >
                 <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-                  <blockquote className="text-gray-900">
-                    <p>{`“${testimonial.body}”`}</p>
+                  <blockquote className="text-primary">
+                    {/* <p>{`“${testimonial.body}”`}</p> */}
+                    <Text>{`“${testimonial.body}”`}</Text>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
                     <Image
@@ -134,10 +135,10 @@ const Testimonials = ({ className }: ITestimonialsProps) => {
                       alt=""
                     />
                     <div>
-                      <div className="font-semibold text-gray-900">
+                      <div className="font-semibold text-primary">
                         {testimonial.author.name}
                       </div>
-                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                      <div className="text-primary/75">{`@${testimonial.author.handle}`}</div>
                     </div>
                   </figcaption>
                 </figure>

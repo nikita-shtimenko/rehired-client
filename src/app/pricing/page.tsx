@@ -44,7 +44,7 @@ const tiers: { [key: Section]: Tier[] } = {
       id: "tier-premium-job-seeker",
       href: "#",
       price: 25,
-      description: "A plan that scales with your rapidly growing business.",
+      description: "Stand out for companies as a top-talent.",
       features: [
         "25 products",
         "Up to 10,000 subscribers",
@@ -138,7 +138,7 @@ const PricingPage = () => {
                     tier.mostPopular
                       ? "ring-1 ring-blue-600/90"
                       : "ring-1 ring-primary/10",
-                    "rounded-3xl p-8 xl:p-10 w-full"
+                    "rounded-3xl p-8 xl:p-10 w-96"
                   )}
                 >
                   <div className="flex items-center justify-between gap-x-4">
